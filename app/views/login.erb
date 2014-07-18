@@ -1,0 +1,106 @@
+<% content_for :header do %>
+  <link rel="stylesheet" href="css/compiled/sign-in.css" type="text/css" media="screen" /> 
+<% end %>
+
+
+<% if @error %>
+  <div>
+    <strong>Wrong username or password</strong>
+  </div>
+<% end %>
+
+
+  <!-- <body>
+      <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a href="index.html" class="navbar-brand"><strong>CLEAN CANVAS</strong></a>
+              </div>
+
+              <div class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="about-us.html">ABOUT US</a></li>
+                      <li class="dropdown active">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="features.html">Features</a></li>
+                              <li><a href="services.html">Services</a></li>
+                              <li><a href="portfolio.html">Portfolio</a></li>
+                              <li><a href="portfolio-item.html">Portfolio Item</a></li>
+                              <li><a href="coming-soon.html">Coming Soon</a></li>
+                              <li><a href="sign-in.html">Sign in</a></li>
+                              <li><a href="sign-up.html">Sign up</a></li>
+                              <li><a href="backgrounds.html">Backgrounds</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="pricing.html">PRICING</a></li>
+                      <li><a href="contact.html">CONTACT US</a></li>
+                      <li><a href="blog.html">BLOG</a></li>
+                      <li><a href="sign-up.html">Sign up</a></li>
+                      <li class="active"><a href="sign-in.html">Sign in</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div> -->
+
+    <!-- Sign In Option 1 -->
+    <div id="sign_in1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 header">
+                    <h4>Log in to your account</h4>
+                    <p>
+                        You can also log in using facebook.</p>
+
+                    <div class="col-md-4 social">
+                        <a href="/auth/facebook" class="circle facebook">
+                            <img src="img/face.png" alt="">
+                        </a>
+                         <a href="#" class="circle twitter">
+                            <img src="img/twt.png" alt="">
+                        </a>
+                         <a href="#" class="circle gplus">
+                            <img src="img/gplus.png" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 division">
+                    <div class="line l"></div>
+                    <span>or</span>
+                    <div class="line r"></div>
+                </div>
+
+                <div class="col-md-12 footer">
+                    <form class="form-inline" action="/auth/identity/callback" method="POST">
+                        <input type="text" placeholder="Email" name="auth_key" class="form-control">
+                        <input type="password" placeholder="Password" name="password" class="form-control">
+                        <input type="submit" value="sign in">
+                    </form>
+                </div>
+
+                <div class="col-md-12 proof">
+                    <div class="col-md-6 remember">
+                        <label class="checkbox">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="reset.html">Forgot password?</a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="dosnt">
+                            <span>Don’t have an account?</span>
+                            <a href="sign-up.html">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
