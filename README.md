@@ -1,7 +1,7 @@
-Sinatra
+Demo omniauth-identity working with omniauth-facebook on Sinatra
 =============
 
-Brought to you by Lighthouse Labs
+
 
 ## Getting Started
 
